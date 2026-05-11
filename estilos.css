@@ -373,7 +373,6 @@ select:focus-visible {
     height: 235px;
     object-fit: cover;
     display: block;
-    decoding: async;
 }
 
 .service-content {
@@ -523,7 +522,6 @@ select:focus-visible {
 .whatsapp-float img {
     width: 44px;
     height: 44px;
-    decoding: async;
 }
 
 @media (max-width: 1024px) {
@@ -590,6 +588,19 @@ select:focus-visible {
 
     .cta-section {
         padding: 30px;
+    }
+
+    .inner-layout,
+    .contact-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aside-panel {
+        position: static;
+    }
+
+    .page-card-grid {
+        grid-template-columns: 1fr;
     }
 
     .whatsapp-float {
@@ -818,17 +829,6 @@ select:focus-visible {
 /* ========================================
    RESPONSIVE - MEDIA QUERIES
    ======================================== */
-    .inner-layout,
-    .contact-page-grid {
-        grid-template-columns: 1fr;
-    }
-    .aside-panel {
-        position: static;
-    }
-    .page-card-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Hamburger Menu */
 .hamburger {
@@ -870,8 +870,9 @@ select:focus-visible {
 }
 
 .nav-open {
-    transform: translateX(0) !important;
-    opacity: 1 !important;
+    right: 0;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* ========================================

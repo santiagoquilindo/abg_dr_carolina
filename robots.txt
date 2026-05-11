@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://[TU-DOMINIO]/sitemap.xml
+Sitemap: https://santiagoquilindo.github.io/abg_dr_carolina/sitemap.xml
